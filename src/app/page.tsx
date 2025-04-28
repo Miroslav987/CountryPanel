@@ -9,10 +9,14 @@ export default function HomePageContent() {
     <>
     <div className="country_block">
       <aside >
+      <Suspense fallback={<div>Loading country list...</div>}>
         <CountryList />
+        </Suspense>
       </aside>
       <main >
+      <Suspense fallback={<div>Loading deatil country...</div>}>
         <CountryDetails />
+      </Suspense>
       </main>
       </div>
     </>
