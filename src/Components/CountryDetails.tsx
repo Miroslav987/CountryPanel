@@ -20,7 +20,7 @@ const CountryDetails = () => {
         return <div style={{color:"red"}} className='loading'><p>{isCountryError}</p></div>;
     }
     if (isCountryLoaded) {
-        return <div className='loading'><p>Загрузка...</p></div>;
+        return <div className='loading'><p>Loading...</p></div>;
     }
 
     return (<>

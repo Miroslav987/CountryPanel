@@ -1,9 +1,10 @@
 
 import CountryDetails from "@/Components/CountryDetails";
 import CountryList from "@/Components/CountryList";
+import { Suspense } from "react";
 
 
-export default function Home() {
+export default function HomePageContent() {
   return (
     <>
     <div className="country_block">
@@ -17,3 +18,9 @@ export default function Home() {
     </>
   );
 }
+
+const Home = () => (
+  <Suspense fallback={<div>Loading...</div>}>
+    <HomePageContent />
+  </Suspense>
+);

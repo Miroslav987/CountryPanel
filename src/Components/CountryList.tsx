@@ -21,7 +21,7 @@ const CountryList = () => {
         return <div style={{color:"red"}} className='loading'><p>{isCountriesError}</p></div>;
     }
     if (isCountriesLoaded) {
-        return <div className="loading"><p>Загрузка...</p></div>;
+        return <div className="loading"><p>Loading...</p></div>;
       }
       
     return (
