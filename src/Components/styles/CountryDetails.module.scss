@@ -1,0 +1,56 @@
+.details {
+  font-size: 20px;
+  gap: 40px;
+  height: 100%;
+  padding: 50px;
+  border-radius: 0px 10px 10px 0px;
+box-shadow: inset  10px 0px 10px -10px #3d3d3d;
+
+  .main_block {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    .main_left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h2 {
+        font-size: 45px;
+      }
+
+      p {
+        font-weight: 900;
+        span {
+          font-weight: 100;
+        }
+      }
+    }
+
+    .flag {
+      img {
+        width: 350px;
+        object-fit: contain;
+        height: 250px;
+        border-radius: 5px
+      }
+    }
+  }
+  .extra_block {
+    margin-top:50px ;
+    h3 {
+      font-size: 25px;
+    }
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      li {
+        margin-left: 25px;
+      }
+    }
+  }
+}
